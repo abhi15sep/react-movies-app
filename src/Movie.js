@@ -18,6 +18,7 @@ Movie.propTypes = {
   desc: PropTypes.string
 }
 
+
 // static defaultProps = {
 //   // desc: 'not available'
 // };
