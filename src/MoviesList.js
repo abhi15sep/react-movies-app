@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Movie from './Movie'
+import { Link } from 'react-router-dom'
 
 class MoviesList extends Component {
   state = {
@@ -32,7 +33,9 @@ class MoviesList extends Component {
   render() {  
     return (
       <div className="c-movieList">
-        {this.state.movies.map(movie => <Movie key={movie.id} movie={movie} />)}
+        <Link to="/test">
+          {this.state.movies.map(movie => <Movie key={movie.id} movie={movie} />)}
+        </Link>
       </div>
     )
   }

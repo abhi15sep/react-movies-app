@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
+  Link,
 } from 'react-router-dom'
 import './App.css'
 
@@ -13,9 +14,11 @@ const App = () => (
     <div className="App">
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <h1>
-          <code>lumdb</code>
-        </h1>
+        <Link to="/" className="noLink">
+          <h1>
+            <code>lumdb</code>
+          </h1>
+        </Link>
       </header>
       <Switch>
         <Route exact path="/" component={MoviesList}/>

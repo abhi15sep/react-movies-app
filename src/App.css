@@ -43,3 +43,13 @@
 .c-movieList {
   padding: 30px 0;
 }
+
+.noLink,
+.noLink:active,
+.noLink:focus,
+.nolink:visited,
+.noLink:link,
+.nolink:hover {
+  text-decoration: none;
+  color: unset;
+}
