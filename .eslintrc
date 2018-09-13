@@ -1,0 +1,35 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["react-app", "eslint:recommended"],
+  "globals": {
+    "moment": true,
+    "angular": true,
+    "_": true,
+    "sha1": true,
+    "$": true,
+    "$clamp": true,
+    "XLSX": true,
+    "saveAs": true,
+    "X2JS": true,
+    "Highcharts": true
+  },
+  "rules": {
+    "indent": ["error", 2],
+    "quotes": ["error", "single"],
+    "semi": ["error", "never"],
+    "brace-style": ["error"],
+    "no-console": [
+      "error",
+      {
+        "allow": ["log", "error", "info", "warn", "table"]
+      }
+    ],
+    "no-multi-spaces": "error",
+    "no-empty": "error",
+    "object-curly-spacing": ["error", "always"],
+    "padded-blocks": ["error", "never"]
+  }
+}
