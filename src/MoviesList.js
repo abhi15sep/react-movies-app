@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 import Movie from './Movie'
-import { Link } from 'react-router-dom'
+
 
 class MoviesList extends Component {
   state = {
     movies: [],
     loading: false
   }
-
   
   componentWillMount() {
     // this.setState({
@@ -33,9 +32,7 @@ class MoviesList extends Component {
   render() {  
     return (
       <div className="c-movieList">
-        <Link to="/test">
-          {this.state.movies.map(movie => <Movie key={movie.id} movie={movie} />)}
-        </Link>
+        {this.state.movies.map(movie => <Movie key={movie.id} movie={movie} />)}
       </div>
     )
   }
