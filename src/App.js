@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {
   BrowserRouter as Router,
   Route,
@@ -14,9 +14,8 @@ const App = () => (
   <Router>
     <div className="App">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <Link to="/" className="noLink">
-          <h1>
+          <h1 className="c-header__title">
             <code>lumdb</code>
           </h1>
         </Link>
@@ -30,8 +29,4 @@ const App = () => (
 )
 
 export default App
-
-const Test = ({ match }) => (
-  <h1>{match.params.id}</h1>
-)
 

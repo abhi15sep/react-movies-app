@@ -1,22 +1,9 @@
-*,
-*:after,
-*:before {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 .App {
   text-align: center;
 }
 
-/* .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-} */
-
 .App-header {
-  background-color: #222222be;
+  background-color: #111;
   padding: 30px 0;
   color: white;
   box-shadow: 0 2px 20px 5px rgba(51, 51, 51, 0.5);
@@ -30,18 +17,12 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+.c-header__title {
+  background: #111;
 }
 
-.c-movieList {
-  padding: 30px 0;
+code {
+  background: #111;
 }
 
 .noLink,

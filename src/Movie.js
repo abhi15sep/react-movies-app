@@ -1,16 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
+import styled from 'styled-components'
 
 const POSTER_PATH = 'http://image.tmdb.org/t/p/w154'
 
 const Movie = ({ movie }) => 
-  <div className="margin-bottom-medium">
-    <h3 className="margin-bottom-small">{movie.title}</h3>
-    <Link to={`/${movie.id}`}>
-      <img src={`${POSTER_PATH}${movie.poster_path}`} alt={movie.title}/>
-    </Link>
-  </div>
+  <Link to={`/${movie.id}`}>
+    <Poster src={`${POSTER_PATH}${movie.poster_path}`} alt={movie.title}/>
+  </Link>
   
 export default Movie
 
@@ -21,6 +19,6 @@ Movie.propTypes = {
   desc: PropTypes.string
 }
 
-// static defaultProps = {
-//   // desc: 'not available'
-// };
+export const Poster = styled.img`
+  box-shadow: 0 0 35px rgba(0,0,0);
+`
