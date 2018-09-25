@@ -16,7 +16,7 @@ const App = () => (
       <header className="App-header">
         <Link to="/" className="noLink">
           <h1 className="c-header__title">
-            <code>lumdb</code>
+            <code>lumdbmovies</code>
           </h1>
         </Link>
       </header>
